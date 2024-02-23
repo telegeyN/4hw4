@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		7228D6D22B87AB43000C5ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228D6D12B87AB43000C5ACC /* AppDelegate.swift */; };
 		7228D6D42B87AB43000C5ACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228D6D32B87AB43000C5ACC /* SceneDelegate.swift */; };
-		7228D6D62B87AB43000C5ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228D6D52B87AB43000C5ACC /* ViewController.swift */; };
-		7228D6D92B87AB43000C5ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7228D6D72B87AB43000C5ACC /* Main.storyboard */; };
+		7228D6D62B87AB43000C5ACC /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228D6D52B87AB43000C5ACC /* ShopViewController.swift */; };
 		7228D6DB2B87AB47000C5ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7228D6DA2B87AB47000C5ACC /* Assets.xcassets */; };
 		7228D6DE2B87AB47000C5ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7228D6DC2B87AB47000C5ACC /* LaunchScreen.storyboard */; };
+		7228D6EA2B87AC86000C5ACC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228D6E92B87AC86000C5ACC /* Color.swift */; };
+		7228D6ED2B87ACAD000C5ACC /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228D6EC2B87ACAD000C5ACC /* Font.swift */; };
+		7228D6EF2B87AD93000C5ACC /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7228D6EE2B87AD93000C5ACC /* Poppins-Bold.ttf */; };
+		7228D6F12B87AD9D000C5ACC /* Poppins-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7228D6F02B87AD9D000C5ACC /* Poppins-ExtraLight.ttf */; };
+		7228D6F32B87ADAB000C5ACC /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7228D6F22B87ADAA000C5ACC /* Poppins-Regular.ttf */; };
+		7228D6F62B87AEA0000C5ACC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228D6F52B87AEA0000C5ACC /* CustomTableViewCell.swift */; };
+		7228D6F82B87B1DE000C5ACC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228D6F72B87B1DE000C5ACC /* DetailViewController.swift */; };
+		7228D6FB2B87B210000C5ACC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228D6FA2B87B210000C5ACC /* Model.swift */; };
+		7228D6FE2B87CE77000C5ACC /* MakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7228D6FD2B87CE77000C5ACC /* MakerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7228D6CE2B87AB43000C5ACC /* 4hw4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 4hw4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7228D6D12B87AB43000C5ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7228D6D32B87AB43000C5ACC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7228D6D52B87AB43000C5ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7228D6D82B87AB43000C5ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7228D6D52B87AB43000C5ACC /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		7228D6DA2B87AB47000C5ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7228D6DD2B87AB47000C5ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7228D6DF2B87AB47000C5ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7228D6E92B87AC86000C5ACC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		7228D6EC2B87ACAD000C5ACC /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		7228D6EE2B87AD93000C5ACC /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Bold.ttf"; path = "../../../../Poppins/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		7228D6F02B87AD9D000C5ACC /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-ExtraLight.ttf"; path = "../../../../Poppins/Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		7228D6F22B87ADAA000C5ACC /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Regular.ttf"; path = "../../../../Poppins/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		7228D6F52B87AEA0000C5ACC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		7228D6F72B87B1DE000C5ACC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7228D6FA2B87B210000C5ACC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		7228D6FD2B87CE77000C5ACC /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,87 @@
 		7228D6D02B87AB43000C5ACC /* 4hw4 */ = {
 			isa = PBXGroup;
 			children = (
-				7228D6D12B87AB43000C5ACC /* AppDelegate.swift */,
-				7228D6D32B87AB43000C5ACC /* SceneDelegate.swift */,
-				7228D6D52B87AB43000C5ACC /* ViewController.swift */,
-				7228D6D72B87AB43000C5ACC /* Main.storyboard */,
-				7228D6DA2B87AB47000C5ACC /* Assets.xcassets */,
+				7228D6E52B87AB67000C5ACC /* AppDelegate */,
+				7228D6E62B87AB75000C5ACC /* Controllers */,
+				7228D6FC2B87CE60000C5ACC /* MakerView */,
+				7228D6F92B87B1FF000C5ACC /* Model */,
+				7228D6F42B87AE7C000C5ACC /* Cell */,
+				7228D6E72B87AB89000C5ACC /* Resources */,
 				7228D6DC2B87AB47000C5ACC /* LaunchScreen.storyboard */,
 				7228D6DF2B87AB47000C5ACC /* Info.plist */,
 			);
 			path = 4hw4;
+			sourceTree = "<group>";
+		};
+		7228D6E52B87AB67000C5ACC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7228D6D12B87AB43000C5ACC /* AppDelegate.swift */,
+				7228D6D32B87AB43000C5ACC /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7228D6E62B87AB75000C5ACC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7228D6D52B87AB43000C5ACC /* ShopViewController.swift */,
+				7228D6F72B87B1DE000C5ACC /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7228D6E72B87AB89000C5ACC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7228D6EB2B87AC9D000C5ACC /* Fonts */,
+				7228D6E82B87AC69000C5ACC /* Color */,
+				7228D6DA2B87AB47000C5ACC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7228D6E82B87AC69000C5ACC /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				7228D6E92B87AC86000C5ACC /* Color.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		7228D6EB2B87AC9D000C5ACC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7228D6EC2B87ACAD000C5ACC /* Font.swift */,
+				7228D6EE2B87AD93000C5ACC /* Poppins-Bold.ttf */,
+				7228D6F02B87AD9D000C5ACC /* Poppins-ExtraLight.ttf */,
+				7228D6F22B87ADAA000C5ACC /* Poppins-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7228D6F42B87AE7C000C5ACC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7228D6F52B87AEA0000C5ACC /* CustomTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7228D6F92B87B1FF000C5ACC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7228D6FA2B87B210000C5ACC /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7228D6FC2B87CE60000C5ACC /* MakerView */ = {
+			isa = PBXGroup;
+			children = (
+				7228D6FD2B87CE77000C5ACC /* MakerView.swift */,
+			);
+			path = MakerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +213,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7228D6F12B87AD9D000C5ACC /* Poppins-ExtraLight.ttf in Resources */,
 				7228D6DE2B87AB47000C5ACC /* LaunchScreen.storyboard in Resources */,
+				7228D6EF2B87AD93000C5ACC /* Poppins-Bold.ttf in Resources */,
 				7228D6DB2B87AB47000C5ACC /* Assets.xcassets in Resources */,
-				7228D6D92B87AB43000C5ACC /* Main.storyboard in Resources */,
+				7228D6F32B87ADAB000C5ACC /* Poppins-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +228,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7228D6D62B87AB43000C5ACC /* ViewController.swift in Sources */,
+				7228D6F62B87AEA0000C5ACC /* CustomTableViewCell.swift in Sources */,
+				7228D6D62B87AB43000C5ACC /* ShopViewController.swift in Sources */,
+				7228D6EA2B87AC86000C5ACC /* Color.swift in Sources */,
+				7228D6ED2B87ACAD000C5ACC /* Font.swift in Sources */,
+				7228D6FE2B87CE77000C5ACC /* MakerView.swift in Sources */,
 				7228D6D22B87AB43000C5ACC /* AppDelegate.swift in Sources */,
 				7228D6D42B87AB43000C5ACC /* SceneDelegate.swift in Sources */,
+				7228D6F82B87B1DE000C5ACC /* DetailViewController.swift in Sources */,
+				7228D6FB2B87B210000C5ACC /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7228D6D72B87AB43000C5ACC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7228D6D82B87AB43000C5ACC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7228D6DC2B87AB47000C5ACC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +385,6 @@
 				INFOPLIST_FILE = 4hw4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +412,6 @@
 				INFOPLIST_FILE = 4hw4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

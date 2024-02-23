@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct Item {
+    var image: String
+    var name: String
+    var quantity: String
+    var detailImage: String
+    var detailName: String
+    var detailPrice: String
+    var detailSettings: String
+    var count: Int
+}

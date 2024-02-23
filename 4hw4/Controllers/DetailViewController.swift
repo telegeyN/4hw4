@@ -21,7 +21,7 @@ class DetailViewController: UIViewController {
     
     private let nameLabel = MakerView().makerLabel(font:Fonts.bold.size(22))
     
-    private let ratingImage = MakerView().makerImage(imageName: "stars")
+    private let ratingStar = MakerView().makerImage()
     
     private let priceLabel = MakerView().makerLabel(font:Fonts.bold.size(20), textColor: .init(hex: "#007AFF"))
     
@@ -39,11 +39,24 @@ class DetailViewController: UIViewController {
     
     private let buyButton = MakerView().makerButton(backgroundColor: .init(hex: "#007AFF"), title: "Buy", titleColor: .white, titleFont: Fonts.bold.size(17))
     
+    private var count = 0
+    
+    init(item: Item) {
+        super.init(nibName: nil, bundle: nil)
+        self.item = item
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.tintColor = .black
         setUpDetails()
         setUpUI()
+        setUpUI2()
         
     }
     
@@ -54,6 +67,8 @@ class DetailViewController: UIViewController {
         nameLabel.text = item.detailName
         priceLabel.text = item.detailPrice
         getSettingLabel.text = item.detailSettings
+        count = item.count
+        
     }
     
     private func setUpUI(){
@@ -62,7 +77,7 @@ class DetailViewController: UIViewController {
         
         view.addSubview(logoImage)
         NSLayoutConstraint.activate([
-            logoImage.topAnchor.constraint(equalTo: view.topAnchor),
+            logoImage.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
             logoImage.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             logoImage.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             logoImage.heightAnchor.constraint(equalToConstant: 375)
@@ -83,7 +98,6 @@ class DetailViewController: UIViewController {
             favoriteButton.heightAnchor.constraint(equalToConstant: 36),
             favoriteButton.widthAnchor.constraint(equalToConstant: 36)
         ])
-        
         favoriteButton.addTarget(self, action: #selector(favoritesTapped), for: .touchUpInside)
         favoriteButton.isUserInteractionEnabled = true
         
@@ -93,18 +107,22 @@ class DetailViewController: UIViewController {
             nameLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             nameLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
         ])
+    }
+    
+    private func setUpUI2(){
         
-        view.addSubview(ratingImage)
+        setUpStars()
+        view.addSubview(ratingStar)
         NSLayoutConstraint.activate([
-            ratingImage.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
-            ratingImage.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-            ratingImage.heightAnchor.constraint(equalToConstant: 21),
-            ratingImage.widthAnchor.constraint(equalToConstant: 75)
+            ratingStar.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 10),
+            ratingStar.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: 16),
+            ratingStar.heightAnchor.constraint(equalToConstant: 18),
+            ratingStar.widthAnchor.constraint(equalToConstant: 85)
         ])
         
         view.addSubview(priceLabel)
         NSLayoutConstraint.activate([
-            priceLabel.topAnchor.constraint(equalTo: ratingImage.bottomAnchor,constant: 15),
+            priceLabel.topAnchor.constraint(equalTo: ratingStar.bottomAnchor,constant: 15),
             priceLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16)
         ])
         
@@ -164,6 +182,27 @@ class DetailViewController: UIViewController {
         ])
     }
     
+    private func setUpStars(){
+        
+        var starImageString = ""
+        
+        switch count {
+        case 1:
+            starImageString = "star_one"
+        case 2:
+            starImageString = "star_two"
+        case 3:
+            starImageString = "star_three"
+        case 4:
+            starImageString = "star_four"
+        case 5:
+            starImageString = "star_five"
+        default:
+            starImageString = "star_default"
+        }
+        
+        ratingStar.image = UIImage(named: starImageString)
+    }
     
     @objc private func favoritesTapped(_ sender: UIButton) {
         print("tapped")
@@ -183,6 +222,4 @@ class DetailViewController: UIViewController {
             quantityLabel.text = "\(quantity - 1)"
         }
     }
-    
-    
 }

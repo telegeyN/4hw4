@@ -39,9 +39,9 @@ class ShopViewController: UIViewController {
     private func updateDetails(){
         
         items =  [
-            Item(image: "item1", name: "Furniture", quantity: "785 Items", detailImage: "detail1", detailName: "AbocoFur Modern Velvet Fabric Lazy Chair", detailPrice: "$230", detailSettings: "Office, Living Room\nYellow\nTextile, Velvet, Cotton\n25.6 x 31.5 x 37.4 inches\n20.3 Pounds"),
-            Item(image: "item2", name: "Kitchenware", quantity: "645 Items", detailImage: "detail2", detailName: "Deluxe Cookware Set", detailPrice: "$195", detailSettings: "Kitchen\nBeige\nCeramic\n26.7*15.75*12.21\n10.0 Pounds"),
-            Item(image: "item3", name: "Reading Table", quantity: "Inventory", detailImage: "detail3", detailName: "Modern Reading Table With Lighting", detailPrice: "$180", detailSettings: "Office, Living Room\nAs Per Design\nTextile, Velvet\n72 x 30 x 30 inches\n21 Pounds")
+            Item(image: "item1", name: "Furniture", quantity: "785 Items", detailImage: "detail1", detailName: "AbocoFur Modern Velvet Fabric Lazy Chair", detailPrice: "$230", detailSettings: "Office, Living Room\nYellow\nTextile, Velvet, Cotton\n25.6 x 31.5 x 37.4 inches\n20.3 Pounds", count: 5),
+            Item(image: "item2", name: "Kitchenware", quantity: "645 Items", detailImage: "detail2", detailName: "Deluxe Cookware Set", detailPrice: "$195", detailSettings: "Kitchen\nBeige\nCeramic\n26.7*15.75*12.21\n10.0 Pounds", count: 3),
+            Item(image: "item3", name: "Reading Table", quantity: "Inventory", detailImage: "detail3", detailName: "Modern Reading Table With Lighting", detailPrice: "$180", detailSettings: "Office, Living Room\nAs Per Design\nTextile, Velvet\n72 x 30 x 30 inches\n21 Pounds", count: 4)
         ]
     }
 }
@@ -70,8 +70,7 @@ extension ShopViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let selectedItem = items[indexPath.row]
-        let vc = DetailViewController()
-        vc.item = selectedItem
+        let vc = DetailViewController(item: selectedItem)
         navigationController?.pushViewController(vc, animated: true)
     }
 }
